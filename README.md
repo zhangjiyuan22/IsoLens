@@ -4,4 +4,4 @@
 </p>
 use multi-isochrones to infer lens property
 
-mesh-independence should be verified by user, due to different sizes of errorbar (Lens Mag, murel_hel)
+mesh independence (i.e., different sampling sizes lead to same mean and uncertainty) should be verified by user, due to different sizes of errorbar (Lens Mag, murel_hel)
