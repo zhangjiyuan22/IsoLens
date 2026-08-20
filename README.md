@@ -14,7 +14,19 @@
 
 For microlensing lenses with measurable flux, the conversion between lens luminosity and mass is not unique because the mass–luminosity relation depends on stellar age and metallicity, particularly for higher-mass lenses. 
 
-IsoLens addresses this issue by combining multi-isochrone stellar models with disk and bulge age–metallicity priors, allowing these population uncertainties to be properly marginalized when inferring lens properties.
+**IsoLens** addresses this issue by combining multi-isochrone stellar models with disk and bulge age–metallicity priors, allowing these population uncertainties to be properly marginalized when inferring lens properties.
+
+## Usage
+
+Configure the event and simulation parameters in the relevant configuration files, then generate the simulated lens population with:
+
+```bash
+python simulate_events.py
+```
+
+The simulation samples lens properties using the adopted Galactic population model and age–metallicity distributions.
+
+The posterior-weighting module, which evaluates the simulated population against the microlensing and lens-flux observables, is currently under development. Its implementation follows the general weighting framework used in [MetalLens](https://github.com/zhangjiyuan22/MetalLens).
 
 ## Citation
 
