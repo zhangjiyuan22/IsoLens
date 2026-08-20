@@ -1,7 +1,7 @@
 import sys
-sys.path.insert(1,'pycode/')
-from functions_cpu import *
-# from functions_cpu_parallel import *
+# sys.path.insert(1,'pycode/')
+# from functions_cpu import *
+from functions_cpu_parallel import *
 from getconfig import *
 import time
 
